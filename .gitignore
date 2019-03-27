@@ -38,3 +38,4 @@ rsconnect/
 # Robin
 *.Rproj
 .DS_Store
+.Rproj.user
