@@ -76,4 +76,19 @@ arbuthnot$boys > arbuthnot$girls
 
 ```
 
+```{r}
+dat <- read.csv(file = "https://raw.githubusercontent.com/elahi/xdp/master/data/class_data_mussels.csv")
+
+head(dat)
+
+str(dat)
+
+boxplot(size_mm ~ name, data = dat)
+
+boxplot(size_mm ~ site, data = dat)
+
+boxplot(size_mm ~ joined_yes_no, data = dat)
+
+```
+
 
