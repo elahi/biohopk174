@@ -1,33 +1,14 @@
 ---
-title: "birth_records_elahi"
+title: "Practice"
 author: "Robin Elahi"
-date: "April 2, 2019"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 ## Intro to R
 
@@ -75,6 +56,114 @@ arbuthnot$boys > arbuthnot$girls
 
 
 ```
+
+## Mean, variance, sd
+
+## Boxplot exercise
+
+```{r}
+
+set.seed(101)
+d <- rnorm(n = 15, mean = 80, sd = 20)
+d <- round(d)
+d
+
+boxplot(d)
+
+d <- c(d, 158, 141)
+
+boxplot(d)
+
+
+```
+
+What is a median?
+
+```{r}
+d <- sort(d, decreasing = FALSE)
+d
+
+n <- length(d)
+n
+
+i_median <- 0.5 * n
+i_median
+i_median <- ceiling(i_median)
+i_median
+size_median <- d[i_median]
+size_median
+median(d)
+```
+
+Challenge: use a similar approach to get the first quartile. 
+
+```{r}
+
+i_25 <- 0.25 * n
+i_25
+i_25 <- ceiling(i_25)
+size_25 <- d[i_25]
+size_25
+```
+
+```{r}
+i_75 <- 0.75 * n
+i_75
+i_75 <- ceiling(i_75)
+size_75 <- d[i_75]
+size_75
+```
+
+IQR
+```{r}
+size_iqr <- size_75 - size_25
+size_iqr
+
+IQR(d)
+
+quantile(d)
+quantile(d, probs = seq(0, 1, by = 0.1))
+
+iqr_1.5 <- size_iqr * 1.5
+iqr_1.5
+
+max_whisker <- size_75 + iqr_1.5
+min_whisker <- size_25 - iqr_1.5
+
+```
+
+```{r}
+
+dat <- data.frame(mussel_size = d)
+dat
+
+install.packages("tidyverse")
+library(tidyverse)
+
+
+dat %>%
+  ggplot(data = ., mapping = aes(x = "dot", y = mussel_size)) + 
+  geom_point()
+
+ggplot(data = dat, mapping = aes(x = "dot", y = mussel_size)) + 
+  geom_point() + 
+  geom_boxplot(data = dat, mapping = aes(x = "box", y = mussel_size)) + 
+  geom_hline(yintercept = max_whisker, color = "red", linetype = "dashed") + 
+  geom_hline(yintercept = min_whisker, color = "red", linetype = "dashed")
+  
+
+
+```
+
+
+
+
+
+
+
+
+
+## Class mussel data
 
 ```{r}
 dat <- read.csv(file = "https://raw.githubusercontent.com/elahi/xdp/master/data/class_data_mussels.csv")
