@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: docs
+  render: 
+    - "*.qmd"
+
+website:
+  title: "oceans 174"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Slides"
+        file: slides/slides.qmd
+      # - text: "Chapter notes"
+      #   file: chapter_notes/chapter2.qmd
+      # - text: "Examples"
+      #   file: examples/low.qmd
+
+  # sidebar:
+  #   - title: "Chapter notes"
+  #     style: "docked"
+  #     background: light
+  #     contents:
+  #       # - chapter_notes/chapter_notes.qmd
+  #       - chapter_notes/chapter2.qmd
+  #       - chapter_notes/chapter3.qmd
+  #       
+  #   - title: "Examples"
+  #     style: "docked"
+  #     background: light
+  #     contents: 
+  #       - examples/low.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+

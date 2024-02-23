@@ -1,0 +1,192 @@
+---
+title: "Data collection"
+author: "Robin Elahi"
+subtitle: "Experimental Design and Probability"
+format: revealjs
+filters:
+  - openlinksinnewpage
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+
+# Set working directory
+knitr::opts_knit$set(root.dir = "../")
+```
+
+## Focus your study!
+
+Generate a good question with a *pilot study*
+
+. . . 
+
+Hypothesis - a clear statement that offers an explanation for observations - construct this in a way to allow gathering of data that can refute or support the explanation
+
+. . . 
+
+Prediction - if hypothesis is true, what would you expect to observe? - what data do you *need to* (not can) collect?
+
+------------------------------------------------------------------------
+
+![](images/800px-Nucella_lapillus.jpg){width="100%"}
+
+## Example: why do whelks group?
+
+Hypothesis: whelks avoid wave action and thus end up in groups in sheltered areas
+
+. . .
+
+Prediction: whelks are more likely to be found in groups in areas sheltered from waves
+
+. . . 
+
+Generate another hypothesis and its associated prediction.
+
+## Example: why do whelks group?
+
+Two hypothesis, H1 and H2.\
+Four possible combinations of these two hypotheses:
+
+> 1.  Neither H is true
+> 2.  H1 is true and H2 is false
+> 3.  H2 is true and H1 is false
+> 4.  H1 and H2 are true
+
+## Good predictions:
+
+> 1.  Follow logically from the hypothesis we wish to test (and not from other hypotheses!)
+> 2.  Lead to obvious experiments that allow predictions to be tested
+> 3.  Force you to identify the data you need to collect
+> 4.  Makes your logic clear to others
+
+> -   Question --\> Hypothesis --\> Prediction
+
+## Producing the strongest evidence for a hypothesis
+
+H: Students enjoy the course in *physiology* more than the course in *experimental design*
+
+P: Students will get higher marks in *physiology* than in *experimental design*
+
+**Think first, then discuss with neighbor**
+
+## Producing the strongest evidence for a hypothesis
+
+H: Students enjoy the course in *physiology* more than the course in *experimental design*
+
+P: Students will get higher marks in *physiology* than in *experimental design*
+
+**Avoid indirect measures**
+
+-   E.g., using exam scores to infer something about student enjoyment
+
+## Make sure negative results are interesting
+
+Be wary of doing experiments where a useful outcome of the work hangs on getting a specific result!
+
+I.e., make sure your results are still scientifically interesting and useful if the outcome is not what you 'hoped' to see.
+
+What if there was no effect?
+
+## Make sure negative results are interesting
+
+H1: Cannabis use has an effect on driving ability\
+P1:
+
+## Make sure negative results are interesting
+
+H1: Cannabis use has an effect on driving ability\
+P1:
+
+H1: Preference for butter vs margarine is linked to driving ability\
+P1:
+
+## Pilot study and preliminary data
+
+> -   Go to your field site. Make observations. Run a simple experiment first. **Do not** leap straight into the full blown study.
+
+Pilot study:
+
+> -   validates the biological question (i.e., what you read in the literature may not be relevant to your system; your advisor might be (gasp) wrong!)
+> -   ensures that your techniques work and they are logistically feasible
+> -   fine-tune your design and statistics
+
+## Sampling and populations
+
+![](images/soup.png){width="100%"}
+
+## Sampling and populations
+
+![](images/population_sample.png){width="100%"}
+
+## Simple random sample
+
+![](images/sample_simple.png){width="100%"}
+
+## Stratify to control for a variable
+
+![](images/sample_stratified.png){width="100%"}
+
+## Cluster to make sampling feasible
+
+![](images/sample_cluster.png){width="100%"}
+
+## Random samples in clusters
+
+![](images/sample_multistage.png){width="100%"}
+
+## Observational studies and experiments
+
+## Observational studies and experiments
+
+**Observational study**: Researchers collect data in a way that does not directly interfere with how the data arise, i.e. they merely “observe”, and can only establish an association between the explanatory and response variables.
+
+**Experiment**: Researchers randomly assign subjects to various treatments in order to establish causal connections between the explanatory and response variables.
+
+## Observational studies
+
+> -   Pros: easier to do, encompasses biologically relevant variation, ethical considerations
+
+> -   Cons: reverse causation, confounding variables
+
+## Reverse causation
+
+![](images/correlation_1.png){width="100%"}
+
+## Confounding variables
+
+![](images/correlation_2.png){width="100%"}
+
+## Correlation does not imply causation
+
+![](images/correlation.png){width="100%"}
+
+https://xkcd.com/552/
+
+## Four principles of experimental design
+
+**Control**: Compare treatment of interest to a control group.
+
+. . . 
+
+**Randomize**: Randomly assign subjects to treatments, and randomly sample from the population whenever possible.
+
+. . . 
+
+**Replicate**: Within a study, replicate by collecting a sufficiently large sample. Or replicate the entire study.
+
+. . . 
+
+**Block**: If there are variables that are known or suspected to affect the response variable, first group subjects into blocks based on these variables, and then randomize cases within each block to treatment groups.
+
+## Random sampling helps generalizability, random assignment helps causality
+
+![](images/random_sample_assignment.pdf)
+
+## Summary
+
+1.  Use a sample to make inferences about the population
+2.  Ideally use a simple random sample, stratify to control for a variable, and cluster to make sampling easier
+3.  Sampling schemes can suffer from a variety of biases
+4.  Experiments use random assignment to treatment groups, observational studies do not
+5.  Four principles of experimental design: randomize, control, block, replicate
+6.  Random sampling helps generalizability, random assignment helps causality

@@ -1,0 +1,338 @@
+[
+  {
+    "objectID": "slides/slides.html",
+    "href": "slides/slides.html",
+    "title": "Slides",
+    "section": "",
+    "text": "Intro to course"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "qk2e",
+    "section": "",
+    "text": "This website is a space for working through Quinn and Keough’s 2nd edition textbook on data analysis for biologists. The Chapter notes are intended for review and discussion in a seminar (Oceans 200). The Slides are intended as a short primer on the topic by the discussion leader. The Examples are reproduced and lightly modified from the original worked examples.\nOceans 174 schedule"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#experimental-design-and-probability",
+    "href": "slides/1_course_intro.html#experimental-design-and-probability",
+    "title": "Intro to OCEANS 174",
+    "section": "Experimental Design and Probability",
+    "text": "Experimental Design and Probability\n\nExperimental design\nData visualization\nProbability\nStatistics\n\nYour domain knowledge is critical for 1.\nComputational tools are central to 2-4"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#course-website-and-textbooks",
+    "href": "slides/1_course_intro.html#course-website-and-textbooks",
+    "title": "Intro to OCEANS 174",
+    "section": "Course website and textbooks",
+    "text": "Course website and textbooks\nhttps://elahi.github.io/biohopk174/\nhttps://www.openintro.org/stat/textbook.php?stat_book=os\nhttps://r4ds.had.co.nz/"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#learning-objectives",
+    "href": "slides/1_course_intro.html#learning-objectives",
+    "title": "Intro to OCEANS 174",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\ndesign experiments with appropriate considerations of controls, randomization, and blocking\nproduce and interpret effective graphical displays of data\ndescribe the utility and limitations of null hypothesis significance testing\nunderstand the framework of general linear models and apply basic analytical tools for inference\nuse R for data analysis and visualization"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#evaluation-and-grading",
+    "href": "slides/1_course_intro.html#evaluation-and-grading",
+    "title": "Intro to OCEANS 174",
+    "section": "Evaluation and grading",
+    "text": "Evaluation and grading\nHere is a breakdown of graded tasks:\n-Labs (10%)\n-Homework (10%)\n-Midterm 1 (20%)\n-Midterm 2 (20%)\n-Final exam (30%)\nLabs and homeworks will be given one of three grades:\n0, 0.5, 1.\nLate submissions will be docked 0.5 point for each day."
+  },
+  {
+    "objectID": "slides/1_course_intro.html#a-flow-chart-for-intro-stats",
+    "href": "slides/1_course_intro.html#a-flow-chart-for-intro-stats",
+    "title": "Intro to OCEANS 174",
+    "section": "A flow chart for intro stats",
+    "text": "A flow chart for intro stats"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#linear-models-as-a-unifying-framework",
+    "href": "slides/1_course_intro.html#linear-models-as-a-unifying-framework",
+    "title": "Intro to OCEANS 174",
+    "section": "Linear models as a unifying framework",
+    "text": "Linear models as a unifying framework\nWe will learn the essentials\n\nt-tests\nregression\nanalysis of variance\n\nin the context of linear models:\n\\[ y = \\alpha + \\beta x \\]"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#fixed-vs-growth-mindset",
+    "href": "slides/1_course_intro.html#fixed-vs-growth-mindset",
+    "title": "Intro to OCEANS 174",
+    "section": "Fixed vs growth mindset",
+    "text": "Fixed vs growth mindset"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#tips-for-success",
+    "href": "slides/1_course_intro.html#tips-for-success",
+    "title": "Intro to OCEANS 174",
+    "section": "Tips for success",
+    "text": "Tips for success\nRead materials before AND after class\nParticipate, ask questions\nDo not procrastinate\nTeamwork (introduce yourself to your neighbor, swap #s)"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#two-axioms",
+    "href": "slides/1_course_intro.html#two-axioms",
+    "title": "Intro to OCEANS 174",
+    "section": "Two axioms",
+    "text": "Two axioms\n\nIf you cannot present the results of your statistical test in simple graphical form, do not trust the statistics.\n\n\nDo the graph and the statistics. If the statistics agree with the graph, then publish the statistics. If the statistics do not agree with the graph, then publish the graph and throw out the statistics."
+  },
+  {
+    "objectID": "slides/1_course_intro.html#two-myths",
+    "href": "slides/1_course_intro.html#two-myths",
+    "title": "Intro to OCEANS 174",
+    "section": "Two myths",
+    "text": "Two myths\n\nIt does not matter how you collect your data, there will always be a statistical ‘fix’ that will allow you to analyze them.\n\n\nIf you collect lots of data something interesting will come out, and you’ll be able to detect even very subtle effects"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#the-central-tenet",
+    "href": "slides/1_course_intro.html#the-central-tenet",
+    "title": "Intro to OCEANS 174",
+    "section": "The central tenet",
+    "text": "The central tenet\nYour sample of data points must be independent and representative of the population\n\nIf not, your inferences will be questionable (at best) or misleading (at worst)."
+  },
+  {
+    "objectID": "slides/1_course_intro.html#statistics-vs-parameters",
+    "href": "slides/1_course_intro.html#statistics-vs-parameters",
+    "title": "Intro to OCEANS 174",
+    "section": "Statistics vs parameters",
+    "text": "Statistics vs parameters\n\n\nA statistic is\n\na numerical description of a sample\n\n\n\n\n\nA parameter is\n\na numerical attribute of a population\n\n\n\n\nOften, statistics are used to estimate parameters."
+  },
+  {
+    "objectID": "slides/1_course_intro.html#the-two-heads-of-classical-statistics",
+    "href": "slides/1_course_intro.html#the-two-heads-of-classical-statistics",
+    "title": "Intro to OCEANS 174",
+    "section": "The two heads of classical statistics",
+    "text": "The two heads of classical statistics\n\nestimating parameters, with uncertainty (confidence intervals)\nevaluating (in-)consistency with a particular situation (\\(p\\)-values)\n\n\n\nWhat do these data tell us about the world?\nHow strongly do we believe it?"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#lurking-behind-everything",
+    "href": "slides/1_course_intro.html#lurking-behind-everything",
+    "title": "Intro to OCEANS 174",
+    "section": "Lurking, behind everything:",
+    "text": "Lurking, behind everything:\nis uncertainty, thanks to:\n\n\nactual differences of biological interest (process uncertainty)\n\n\n\n\nuninteresting differences due to sampling variation and measurement error (observation uncertainty)\n\n\n\nHow do we understand uncertainty, concretely and quantitatively?\n\n\n\nwith models."
+  },
+  {
+    "objectID": "slides/1_course_intro.html#break",
+    "href": "slides/1_course_intro.html#break",
+    "title": "Intro to OCEANS 174",
+    "section": "Break",
+    "text": "Break\nStand up! Stretch! Get a drink, use the restroom.\nThen, with a partner(s), go to a board and discuss the following:\n\nsomething…"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#data-story",
+    "href": "slides/1_course_intro.html#data-story",
+    "title": "Intro to OCEANS 174",
+    "section": "Data story",
+    "text": "Data story\nLow et al (2016) examined the effects of two different anesthetics on aspects of the physiology of the mouse. Twelve mice were anesthetized with isoflurane and eleven mice were anesthetized with alpha chloralose and blood CO2 levels were recorded after 120 minutes. The H0 was that there was no difference between the anesthetics in the mean blood CO2 level. This is an independent comparison because individual mice were only given one of the two anesthetics."
+  },
+  {
+    "objectID": "slides/1_course_intro.html#r",
+    "href": "slides/1_course_intro.html#r",
+    "title": "Intro to OCEANS 174",
+    "section": "R",
+    "text": "R\n\nlibrary(tidyverse)\nlibrary(car)\n\ntheme_set(theme_bw(base_size = 16) + \n            theme(panel.grid.minor = element_blank(), \n                  strip.background = element_blank()))"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#the-data",
+    "href": "slides/1_course_intro.html#the-data",
+    "title": "Intro to OCEANS 174",
+    "section": "The data",
+    "text": "The data\n\nlow &lt;- read.csv(\"data/lowco2.csv\")\n\n \n\n\nnames(low)\n\n[1] \"anesth\" \"co2\"   \n\n\n\n\n\n\n\ndim(low)\n\n[1] 23  2\n\n\n\n\n\n\n\nstr(low)\n\n'data.frame':   23 obs. of  2 variables:\n $ anesth: chr  \"iso\" \"iso\" \"iso\" \"iso\" ...\n $ co2   : int  43 35 50 39 56 54 39 51 49 54 ..."
+  },
+  {
+    "objectID": "slides/1_course_intro.html#visualize-data",
+    "href": "slides/1_course_intro.html#visualize-data",
+    "title": "Intro to OCEANS 174",
+    "section": "Visualize data",
+    "text": "Visualize data\n\nlow %&gt;% \n  ggplot(aes(anesth, co2)) + \n  geom_point(alpha = 0.5, size = 5) + \n  labs(x = \"Anesthetic\", y = \"CO2\") + \n  theme_bw(base_size = 24)"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#summarizing-data-point-estimates-and-variability",
+    "href": "slides/1_course_intro.html#summarizing-data-point-estimates-and-variability",
+    "title": "Intro to OCEANS 174",
+    "section": "Summarizing data: point estimates and variability",
+    "text": "Summarizing data: point estimates and variability\n\nlow %&gt;%  \n  group_by(anesth) %&gt;% \n  summarise(n = n(), \n            mean = mean(co2),\n            median = median(co2),\n            sd = sd(co2), \n            variance = var(co2), \n            se = sd / sqrt(n)\n            )\n\n# A tibble: 2 × 7\n  anesth     n  mean median    sd variance    se\n  &lt;chr&gt;  &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;\n1 ac        11  70.9   64    20.2     408.  6.09\n2 iso       12  50     50.5  11.4     130.  3.29"
+  },
+  {
+    "objectID": "slides/1_course_intro.html#your-turn",
+    "href": "slides/1_course_intro.html#your-turn",
+    "title": "Intro to OCEANS 174",
+    "section": "Your turn",
+    "text": "Your turn\nWith a partner, go to the website, check out the source code, and work though the Chapter 2 notes together."
+  },
+  {
+    "objectID": "slides/2_data_collection.html#focus-your-study",
+    "href": "slides/2_data_collection.html#focus-your-study",
+    "title": "Data collection",
+    "section": "Focus your study!",
+    "text": "Focus your study!\nGenerate a good question with a pilot study\n\nHypothesis - a clear statement that offers an explanation for observations - construct this in a way to allow gathering of data that can refute or support the explanation\n\n\nPrediction - if hypothesis is true, what would you expect to observe? - what data do you need to (not can) collect?"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#example-why-do-whelks-group",
+    "href": "slides/2_data_collection.html#example-why-do-whelks-group",
+    "title": "Data collection",
+    "section": "Example: why do whelks group?",
+    "text": "Example: why do whelks group?\nHypothesis: whelks avoid wave action and thus end up in groups in sheltered areas\n\nPrediction: whelks are more likely to be found in groups in areas sheltered from waves\n\n\nGenerate another hypothesis and its associated prediction."
+  },
+  {
+    "objectID": "slides/2_data_collection.html#example-why-do-whelks-group-1",
+    "href": "slides/2_data_collection.html#example-why-do-whelks-group-1",
+    "title": "Data collection",
+    "section": "Example: why do whelks group?",
+    "text": "Example: why do whelks group?\nTwo hypothesis, H1 and H2.\nFour possible combinations of these two hypotheses:\n\nNeither H is true\nH1 is true and H2 is false\nH2 is true and H1 is false\nH1 and H2 are true"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#good-predictions",
+    "href": "slides/2_data_collection.html#good-predictions",
+    "title": "Data collection",
+    "section": "Good predictions:",
+    "text": "Good predictions:\n\nFollow logically from the hypothesis we wish to test (and not from other hypotheses!)\nLead to obvious experiments that allow predictions to be tested\nForce you to identify the data you need to collect\nMakes your logic clear to others\n\n\nQuestion –&gt; Hypothesis –&gt; Prediction"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#producing-the-strongest-evidence-for-a-hypothesis",
+    "href": "slides/2_data_collection.html#producing-the-strongest-evidence-for-a-hypothesis",
+    "title": "Data collection",
+    "section": "Producing the strongest evidence for a hypothesis",
+    "text": "Producing the strongest evidence for a hypothesis\nH: Students enjoy the course in physiology more than the course in experimental design\nP: Students will get higher marks in physiology than in experimental design\nThink first, then discuss with neighbor"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#producing-the-strongest-evidence-for-a-hypothesis-1",
+    "href": "slides/2_data_collection.html#producing-the-strongest-evidence-for-a-hypothesis-1",
+    "title": "Data collection",
+    "section": "Producing the strongest evidence for a hypothesis",
+    "text": "Producing the strongest evidence for a hypothesis\nH: Students enjoy the course in physiology more than the course in experimental design\nP: Students will get higher marks in physiology than in experimental design\nAvoid indirect measures\n\nE.g., using exam scores to infer something about student enjoyment"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#make-sure-negative-results-are-interesting",
+    "href": "slides/2_data_collection.html#make-sure-negative-results-are-interesting",
+    "title": "Data collection",
+    "section": "Make sure negative results are interesting",
+    "text": "Make sure negative results are interesting\nBe wary of doing experiments where a useful outcome of the work hangs on getting a specific result!\nI.e., make sure your results are still scientifically interesting and useful if the outcome is not what you ‘hoped’ to see.\nWhat if there was no effect?"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#make-sure-negative-results-are-interesting-1",
+    "href": "slides/2_data_collection.html#make-sure-negative-results-are-interesting-1",
+    "title": "Data collection",
+    "section": "Make sure negative results are interesting",
+    "text": "Make sure negative results are interesting\nH1: Cannabis use has an effect on driving ability\nP1:"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#make-sure-negative-results-are-interesting-2",
+    "href": "slides/2_data_collection.html#make-sure-negative-results-are-interesting-2",
+    "title": "Data collection",
+    "section": "Make sure negative results are interesting",
+    "text": "Make sure negative results are interesting\nH1: Cannabis use has an effect on driving ability\nP1:\nH1: Preference for butter vs margarine is linked to driving ability\nP1:"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#pilot-study-and-preliminary-data",
+    "href": "slides/2_data_collection.html#pilot-study-and-preliminary-data",
+    "title": "Data collection",
+    "section": "Pilot study and preliminary data",
+    "text": "Pilot study and preliminary data\n\nGo to your field site. Make observations. Run a simple experiment first. Do not leap straight into the full blown study.\n\nPilot study:\n\nvalidates the biological question (i.e., what you read in the literature may not be relevant to your system; your advisor might be (gasp) wrong!)\nensures that your techniques work and they are logistically feasible\nfine-tune your design and statistics"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#sampling-and-populations",
+    "href": "slides/2_data_collection.html#sampling-and-populations",
+    "title": "Data collection",
+    "section": "Sampling and populations",
+    "text": "Sampling and populations"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#sampling-and-populations-1",
+    "href": "slides/2_data_collection.html#sampling-and-populations-1",
+    "title": "Data collection",
+    "section": "Sampling and populations",
+    "text": "Sampling and populations"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#simple-random-sample",
+    "href": "slides/2_data_collection.html#simple-random-sample",
+    "title": "Data collection",
+    "section": "Simple random sample",
+    "text": "Simple random sample"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#stratify-to-control-for-a-variable",
+    "href": "slides/2_data_collection.html#stratify-to-control-for-a-variable",
+    "title": "Data collection",
+    "section": "Stratify to control for a variable",
+    "text": "Stratify to control for a variable"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#cluster-to-make-sampling-feasible",
+    "href": "slides/2_data_collection.html#cluster-to-make-sampling-feasible",
+    "title": "Data collection",
+    "section": "Cluster to make sampling feasible",
+    "text": "Cluster to make sampling feasible"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#random-samples-in-clusters",
+    "href": "slides/2_data_collection.html#random-samples-in-clusters",
+    "title": "Data collection",
+    "section": "Random samples in clusters",
+    "text": "Random samples in clusters"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#observational-studies-and-experiments",
+    "href": "slides/2_data_collection.html#observational-studies-and-experiments",
+    "title": "Data collection",
+    "section": "Observational studies and experiments",
+    "text": "Observational studies and experiments"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#observational-studies-and-experiments-1",
+    "href": "slides/2_data_collection.html#observational-studies-and-experiments-1",
+    "title": "Data collection",
+    "section": "Observational studies and experiments",
+    "text": "Observational studies and experiments\nObservational study: Researchers collect data in a way that does not directly interfere with how the data arise, i.e. they merely “observe”, and can only establish an association between the explanatory and response variables.\nExperiment: Researchers randomly assign subjects to various treatments in order to establish causal connections between the explanatory and response variables."
+  },
+  {
+    "objectID": "slides/2_data_collection.html#observational-studies",
+    "href": "slides/2_data_collection.html#observational-studies",
+    "title": "Data collection",
+    "section": "Observational studies",
+    "text": "Observational studies\n\nPros: easier to do, encompasses biologically relevant variation, ethical considerations\n\n\nCons: reverse causation, confounding variables"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#reverse-causation",
+    "href": "slides/2_data_collection.html#reverse-causation",
+    "title": "Data collection",
+    "section": "Reverse causation",
+    "text": "Reverse causation"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#confounding-variables",
+    "href": "slides/2_data_collection.html#confounding-variables",
+    "title": "Data collection",
+    "section": "Confounding variables",
+    "text": "Confounding variables"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#correlation-does-not-imply-causation",
+    "href": "slides/2_data_collection.html#correlation-does-not-imply-causation",
+    "title": "Data collection",
+    "section": "Correlation does not imply causation",
+    "text": "Correlation does not imply causation\n\nhttps://xkcd.com/552/"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#four-principles-of-experimental-design",
+    "href": "slides/2_data_collection.html#four-principles-of-experimental-design",
+    "title": "Data collection",
+    "section": "Four principles of experimental design",
+    "text": "Four principles of experimental design\nControl: Compare treatment of interest to a control group.\n\nRandomize: Randomly assign subjects to treatments, and randomly sample from the population whenever possible.\n\n\nReplicate: Within a study, replicate by collecting a sufficiently large sample. Or replicate the entire study.\n\n\nBlock: If there are variables that are known or suspected to affect the response variable, first group subjects into blocks based on these variables, and then randomize cases within each block to treatment groups."
+  },
+  {
+    "objectID": "slides/2_data_collection.html#random-sampling-helps-generalizability-random-assignment-helps-causality",
+    "href": "slides/2_data_collection.html#random-sampling-helps-generalizability-random-assignment-helps-causality",
+    "title": "Data collection",
+    "section": "Random sampling helps generalizability, random assignment helps causality",
+    "text": "Random sampling helps generalizability, random assignment helps causality"
+  },
+  {
+    "objectID": "slides/2_data_collection.html#summary",
+    "href": "slides/2_data_collection.html#summary",
+    "title": "Data collection",
+    "section": "Summary",
+    "text": "Summary\n\nUse a sample to make inferences about the population\nIdeally use a simple random sample, stratify to control for a variable, and cluster to make sampling easier\nSampling schemes can suffer from a variety of biases\nExperiments use random assignment to treatment groups, observational studies do not\nFour principles of experimental design: randomize, control, block, replicate\nRandom sampling helps generalizability, random assignment helps causality"
+  }
+]

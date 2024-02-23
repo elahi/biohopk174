@@ -1,0 +1,249 @@
+---
+title: "Intro to OCEANS 174"
+author: "Robin Elahi"
+subtitle: "Experimental Design and Probability"
+format: revealjs
+filters:
+  - openlinksinnewpage
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+
+# Set working directory
+knitr::opts_knit$set(root.dir = "../")
+```
+
+## Experimental Design and Probability
+
+1.  Experimental design
+2.  Data visualization
+3.  Probability
+4.  Statistics
+
+Your domain knowledge is critical for **1**.
+
+Computational tools are central to **2-4**
+
+## Course website and textbooks
+
+https://elahi.github.io/biohopk174/
+
+https://www.openintro.org/stat/textbook.php?stat_book=os
+
+https://r4ds.had.co.nz/
+
+## Learning objectives
+
+1.  design experiments with appropriate considerations of controls, randomization, and blocking
+2.  produce and interpret effective graphical displays of data
+3.  describe the utility and limitations of null hypothesis significance testing
+4.  understand the framework of general linear models and apply basic analytical tools for inference
+5.  use R for data analysis and visualization
+
+## Evaluation and grading
+
+Here is a breakdown of graded tasks:
+
+-Labs (10%)\
+-Homework (10%)\
+-Midterm 1 (20%)\
+-Midterm 2 (20%)\
+-Final exam (30%)
+
+Labs and homeworks will be given one of three grades:\
+0, 0.5, 1.\
+Late submissions will be docked 0.5 point for each day.
+
+## A flow chart for intro stats
+
+![](images/sr_fig_1.1.jpg){width="80%"}
+
+## Linear models as a unifying framework
+
+We will learn the essentials
+
+-   t-tests
+-   regression
+-   analysis of variance
+
+in the context of linear models:
+
+$$ y = \alpha + \beta x $$
+
+## Fixed vs growth mindset
+
+```{=tex}
+\begincols
+  \begincol{.5\textwidth}
+```
+![](images/carol_dweck.jpg){width="100%"}
+
+\endcol \begincol{.5\textwidth}
+
+![](images/young_mj.jpg){width="100%"}
+
+\endcol \endcols
+
+## Tips for success
+
+Read materials before AND after class
+
+Participate, ask questions
+
+Do not procrastinate
+
+Teamwork (introduce yourself to your neighbor, swap #s)
+
+## Two axioms
+
+> 1.  If you cannot present the results of your statistical test in simple graphical form, do not trust the statistics.
+
+> 2.  Do the graph and the statistics. If the statistics agree with the graph, then publish the statistics. If the statistics do not agree with the graph, then publish the graph and throw out the statistics.
+
+## Two myths
+
+> 1.  It does not matter how you collect your data, there will always be a statistical 'fix' that will allow you to analyze them.
+
+> 2.  If you collect lots of data something interesting will come out, and you'll be able to detect even very subtle effects
+
+## The central tenet
+
+Your **sample** of data points must be **independent** and **representative** of the **population**
+
+![](images/population_sample.png){width="100%"}
+
+If not, your **inferences** will be questionable (at best) or misleading (at worst).
+
+# Some core statistical concepts
+
+## Statistics vs parameters
+
+. . .
+
+A **statistic** is
+
+:   a numerical description of a sample
+
+. . .
+
+A **parameter** is
+
+:   a numerical attribute of a population
+
+. . .
+
+Often, *statistics* are used to estimate *parameters*.
+
+## The two heads of classical statistics
+
+-   estimating parameters, with uncertainty *(confidence intervals)*
+
+-   evaluating (in-)consistency with a particular situation *(*$p$-values)
+
+. . .
+
+-   What do these data tell us about the world?
+
+-   How strongly do we believe it?
+
+## Lurking, behind everything:
+
+is *uncertainty,* thanks to:
+
+. . .
+
+-   actual differences of biological interest (*process* uncertainty)
+
+. . .
+
+-   uninteresting differences due to sampling variation and measurement error (*observation* uncertainty)
+
+. . .
+
+How do we understand uncertainty, concretely and quantitatively?
+
+. . .
+
+-   with *models*.
+
+## Break
+
+Stand up! Stretch! Get a drink, use the restroom.
+
+Then, with a partner(s), go to a board and discuss the following:
+
+-   something...
+
+## Data story
+
+Low et al (2016) examined the effects of two different anesthetics on aspects of the physiology of the mouse. Twelve mice were anesthetized with isoflurane and eleven mice were anesthetized with alpha chloralose and blood CO~2~ levels were recorded after 120 minutes. The H~0~ was that there was no difference between the anesthetics in the mean blood CO~2~ level. This is an independent comparison because individual mice were only given one of the two anesthetics.
+
+## R
+
+```{r packages}
+library(tidyverse)
+library(car)
+
+theme_set(theme_bw(base_size = 16) + 
+            theme(panel.grid.minor = element_blank(), 
+                  strip.background = element_blank()))
+```
+
+## The data
+
+```{r}
+low <- read.csv("data/lowco2.csv")
+```
+
+ 
+
+. . .
+
+```{r}
+names(low)
+```
+
+\
+
+. . .
+
+```{r}
+dim(low)
+```
+
+\
+
+. . .
+
+```{r}
+str(low)
+```
+
+## Visualize data
+
+```{r}
+low %>% 
+  ggplot(aes(anesth, co2)) + 
+  geom_point(alpha = 0.5, size = 5) + 
+  labs(x = "Anesthetic", y = "CO2") + 
+  theme_bw(base_size = 24)
+```
+
+## Summarizing data: point estimates and variability
+
+```{r}
+low %>%  
+  group_by(anesth) %>% 
+  summarise(n = n(), 
+            mean = mean(co2),
+            median = median(co2),
+            sd = sd(co2), 
+            variance = var(co2), 
+            se = sd / sqrt(n)
+            )
+```
+
+## Your turn
+
+With a partner, go to the [website](https://elahi.github.io/qk2e/), check out the [source code](https://github.com/elahi/qk2e), and work though the [Chapter 2 notes](https://elahi.github.io/qk2e/chapter_notes/chapter2.html) together.

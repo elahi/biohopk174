@@ -1,0 +1,12 @@
+---
+title: "Slides"
+output:
+  html_document:
+    df_print: paged
+  html_notebook:
+    theme: flatly
+editor_options:
+  chunk_output_type: console
+---
+
+[Intro to course](1_course_intro.qmd){target="_blank"}
